@@ -10,7 +10,7 @@ A [keras](https://keras.io/) FRCNN to detect Fox in Super Smash Bros Melee for t
 
 This gif shows the output of the model.  The model works with still images 1 at time; a sample of these single frame outputs were then converted into the gif.
 
-![](readme/kjh_plup_vgbc_tbh7_fox_detect2.gif)
+![](.github/kjh_plup_vgbc_tbh7_fox_detect2.gif)
 
 ## Usage
 
@@ -18,8 +18,10 @@ If you'd like to use the trained fox model you'll need to:
 
 *  clone this repo
 *  download `model_frcnn.hdf5` to the cloned directory from [here](https://drive.google.com/drive/folders/17QcuO9GQsiqO_4V86iV1gBGUCCfbPkUm)
-*  create a subdirectory named `results_imgs` in the cloned directory
-*  run the command: `python test_frcnn.py -p /path/to/folder/with/images/to/annotate`
+*  download a melee video to this repo's root directory, name it video.mp4
+*  `./frames.sh`
+* `pip3 install -r requirements.txt`
+*  `python3 test_frcnn.py -p ./frames`
 
 The model will output the annotated images to `results_imgs`.
 

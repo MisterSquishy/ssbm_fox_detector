@@ -99,3 +99,14 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# VSCode
+.DS_Store
+
+# test data
+*.mp4
+*.hdf5
+*.zip
+results_imgs/*
+!results_imgs/.init
+frames
